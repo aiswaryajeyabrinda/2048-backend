@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/2048")
-@CrossOrigin(origins = "http://localhost:3000")
+//2048@CrossOrigin(origins = "https://2048-matrix-game.netlify.app")
+@CrossOrigin(origins = {"https://2048-matrix-game.netlify.app", "http://localhost:3000"})
 public class Controller {
 
         @Autowired
